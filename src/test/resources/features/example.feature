@@ -132,7 +132,11 @@ Feature: OpenApplication
     Then Wait 2 seconds
     Then Element with xpath "//XCUIElementTypeButton[@name='Kampanyalar']" is clicked
 
-
+  @BasicTiklamalarIOS01Wait
+  Scenario: BasicTiklamalarIOS01Wait
+    Given Wait 420 seconds
+    Then Element with xpath "//*[contains(@text, '')]" is clicked
+    Then Wait 2 seconds
 
   @BasicTiklamalarAndroid01
   Scenario: BasicTiklamalarAndroid01
