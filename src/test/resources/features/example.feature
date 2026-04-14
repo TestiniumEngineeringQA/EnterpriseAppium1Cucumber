@@ -144,6 +144,12 @@ Feature: OpenApplication
     Then Element with xpath "//*[contains(@resource-id, 'android:id/button2') and contains(@text, 'İPTAL')]" is clicked
     Then Wait 5 seconds
 
+  @BasicTiklamalarAndroid01Wait
+  Scenario: BasicTiklamalarAndroid01Wait
+    Given Wait 420 seconds
+    Then Element with xpath "//*[contains(@resource-id, 'android:id/button2') and contains(@text, 'İPTAL')]" is clicked
+    Then Wait 5 seconds
+
   @BasicTiklamalarAndroid02
   Scenario: BasicTiklamalarAndroid02
     Given Wait 5 seconds
